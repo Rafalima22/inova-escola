@@ -3,15 +3,13 @@ from django.http import HttpResponse
 
 
 # Create your views here.
-# from django.shortcuts import render
-
 
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'inova/home.html')
 
 
 def contato(request):
-    return HttpResponse('contato.html')
+    return render(request, 'inova/contato.html')
 
 
 def sobre(request):
